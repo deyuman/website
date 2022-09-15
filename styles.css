@@ -17,15 +17,12 @@
 .topnav a:hover {
     background-color: #ddd;
     color: black;
+   
   }
-.topnav a.active {
+.home {
     background-color: #04AA6D;
-    color: white;
+    color: rgb(195, 33, 33);
   }
-.div{
-    background-color:red ;
-    display: inline-block;
-}
 .titulo-me{
     text-align:center;
 }
@@ -46,4 +43,12 @@
     top: 50%;
     left: 224px;
 
+}
+.bandera{
+  background-image: url("images/bandera.webp");
+ background-color: red;
+  display: inline-block;
+  height: 80px;
+  width: 300px;
+  text-indent: -9999999px;
 }

@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        function init() {
+          var loc = window.location.href;
+          var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+          var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                                loc + '?profile=css3';
+          document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+          document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+        }
+        window.onload = init;
+    </script>
     <link rel="stylesheet" href="styles.css" type="text/css" media="screen">
 <meta charset="utf=8">
 <title>Deyvi's Awesome Website!</title>
@@ -14,7 +25,8 @@
 <h1 class="yo">Deyvi's  Website</h1>
 </body>
 <footer>
-
+    <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+    <a id="vLink2"><strong> CSS </strong> Valid! </a>
 </footer>
 </html>
 
