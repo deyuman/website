@@ -34,14 +34,14 @@
 }
 .home{
   float:none;
-  position:absolute
-  top 50%;
+  position:absolute;
+  top: 50%;
   left: 50%;
 }
 .facts{
   float:none;
-  position:absolute
-  top 50%;
+  position:absolute;
+  top: 50%;
   left: 224px;
 }
 h1 .footer {
