@@ -1,28 +1,28 @@
 .body{
-    margin: 0;
-  }
+  margin: 0;
+}
 .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
+  overflow: hidden;
+  background-color: #333;
+}
 .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 124px ;
-    text-decoration: none;
-    font-size: 17px;
-  }
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 124px ;
+  text-decoration: none;
+  font-size: 17px;
+}
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+  background-color: #ddd;
+  color: black;
+}
 .home {
-    background-color: #04AA6D;
-    color: rgb(195, 33, 33);
+  background-color: #04AA6D;
+  color: rgb(195, 33, 33);
   }
 .titulo-me{
-    text-align:center;
+  text-align:center;
 }
 .yo{
   font-size: 50px;
@@ -30,7 +30,7 @@
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color:rgb(242, 9, 9)
+  color:rgb(251, 251, 251)
 }
 .home{
   position: relative;
@@ -52,7 +52,8 @@ h1 .footer {
 }
 .container{
   display:inline-flex;
-  width: 1000px; 
+  width: 100%; 
+  height: auto;
 }
 .container img{
   width: 457px;
@@ -70,4 +71,15 @@ h1 .footer {
 img{
   width: 100%;
   height: auto;
+}
+.foot{
+  
+  width: 100%;
+  display: inline-flex; 
+  background-color: #333;
+}
+.pie{
+  margin-left: 60px;
+
+  width: 50px;
 }
