@@ -20,12 +20,12 @@
 .home {
   background-color: #04AA6D;
   color: rgb(195, 33, 33);
-  }
+}
 .titulo-me{
   text-align:center;
 }
 .yo{
-  border-style: solid;
+  font-style: inherit;
   font-size: 50px;
   position: absolute;
   top: 20%;
@@ -83,4 +83,5 @@ img{
   margin-left: 60px;
   width: 50px;
   height: 40px;
+  border-radius: 10px;
 }
