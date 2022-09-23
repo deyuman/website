@@ -25,7 +25,6 @@
   text-align:center;
 }
 .yo{
-  font-style: inherit;
   font-size: 50px;
   position: absolute;
   top: 20%;
@@ -70,6 +69,7 @@ h1 .footer {
   text-align: center;
 }
 img{
+  
   width: 100%;
   height: auto;
 }
