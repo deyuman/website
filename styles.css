@@ -25,12 +25,13 @@
   text-align:center;
 }
 .yo{
+  border-style: solid;
   font-size: 50px;
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color:rgb(251, 251, 251)
+  color:rgb(241, 2, 2)
 }
 .home{
   position: relative;
@@ -80,6 +81,6 @@ img{
 }
 .pie{
   margin-left: 60px;
-
   width: 50px;
+  height: 40px;
 }
