@@ -68,13 +68,13 @@ h1 .footer {
   position: relative;
   text-align: center;
 }
-img{
-  
+img{         
   width: 100%;
   height: auto;
+
 }
 .foot{
-  
+  height: 200px;
   width: 100%;
   display: inline-flex; 
   background-color: #333;
@@ -84,4 +84,9 @@ img{
   width: 50px;
   height: 40px;
   border-radius: 10px;
+}
+.foot2{
+  overflow: hidden;
+  background-color: #04AA6D;
+  width:100%;
 }
