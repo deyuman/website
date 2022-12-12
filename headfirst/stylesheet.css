@@ -2,8 +2,17 @@ body{
     margin:0;
 }
 /*navigation*/
-main{
+ul {
     display:flex;
-    background-color: rgb(5, 5, 247,0.8);
+    background-color: rgba(0, 0, 255, 0.8);
     height: auto;
+    width:100%;
+    gap:10%;
+}
+
+a {
+    margin:10px;
+    font-size: 25px;
+    
+    
 }
