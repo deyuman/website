@@ -1,0 +1,9 @@
+body{
+    margin:0;
+}
+/*navigation*/
+.nav{
+    display:flex;
+    background-color: rgb(5, 5, 247,0.8);
+    height: auto;
+}
