@@ -17,7 +17,11 @@ ul {
    
    
 }
+ul.a{
+    text-decoration: none;
+}
 a {
+    color:white;
     margin:5%;
     font-size: 25px;
     
@@ -26,6 +30,9 @@ a {
 /*navigation*/
 footer{
     margin-top:10%;
-    position:relative;
     text-align:center;
+}
+.pie{
+    color:black;
+   
 }
