@@ -1,3 +1,28 @@
 body{
     margin: 0;
 }
+main { 
+   
+}
+/*nav bar*/
+ul{
+    background-color: blue;
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;
+    margin: 0%;
+    width: 100%;
+}
+ul a:hover{
+    background-color: rgba(96, 86, 86, 0.5);
+
+}
+/*nav bar*/
+/*canvas*/
+canvas{
+    height: auto;
+    width: 60%;
+    border:1px solid #ee0707;
+}
