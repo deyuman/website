@@ -6,14 +6,18 @@ main {
 }
 /*nav bar*/
 ul{
+    display: flex;
+    justify-content: space-evenly;
     background-color: blue;
+    align-items: end;
     width: 100%;
+    flex-wrap: wrap;
     
 }
 a{
     text-decoration: none;
     margin: 0%;
-    width: 100%;
+    width: 80px;
 }
 ul a:hover{
     background-color: rgba(96, 86, 86, 0.5);
