@@ -1,5 +1,9 @@
 body{
     margin:0;
+    display:flex;
+    flex-wrap:wrap;
+    
+
 }
 h1{
     margin:0;
@@ -7,7 +11,8 @@ h1{
 }
 /*navigation*/
 main{
-    display:inline-block;
+    
+
     width: 100%;
 }
 ul {
@@ -35,4 +40,25 @@ footer{
 .pie{
     color:black;
    
+}
+/*question code*/
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+    width:100%;
+    font-size: 40px;
+}
+#ans1{
+    border-style: solid;
+    border-color: black;
+}
+div{
+    margin: 5px;
+}
+.questions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
 }

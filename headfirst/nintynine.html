@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <style> html {scroll-behavior: smooth;}</style>
-     <link rel="stylesheet" href="stylesheet.css">
-     <meta charset="utf-8">
-    <title>Deyvi's Awesome Website!</title>
+  <style> html {scroll-behavior: smooth;}</style>
+  <link rel="stylesheet" href="stylesheet.css">
+  <meta charset="utf-8">
+  <title>Deyvi's Awesome Website!</title>
     <script>
         function init() {
           var loc = window.location.href;
@@ -15,42 +15,48 @@
           document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
         }
         window.onload = init;
-    </script>
-    </head>
-    <body>
-        <main>
-            <h1>Nintynine</h1>
-            <ul>
-            <a href="https://deyuman.github.io/website/">Main Website</a>
-            <a href="nintynine.html">nintynine</a>
-            <a href="index.html">home</a>
-            <a href="planet.html">planet</a>
-            <a href="buzzwords.html">buzzwords</a>
-            </ul>
-        </main>
-        <script>
-            var drink = "Energy Drink";
-            var lyrics = "";
-            var cans = 99;
-            while (cans > 0) {
-                lyrics = lyrics + cans + " cans of "
-                + drink + " on the wall <br>";
-                lyrics = lyrics + cans + " cans of "
-                + drink + "<br>";
-                lyrics = lyrics + "Take one down, pass it around,<br>";
-                if (cans > 1) {
-                lyrics = lyrics + (cans-1) + " cans of " + drink + " on the wall <br>";
-                }
-                else {
-                lyrics = lyrics + "No more cans of "  + drink + " on the wall <br>";
-                } 
-                cans=cans-1;
-            }
-            document.write(lyrics);
-        </script>
-        <footer>
-            <a class="pie" id="vLink1"><strong> HTML </strong> Valid! </a> |
-            <a class="pie" id="vLink2"><strong> CSS </strong> Valid! </a>
-        </footer>
-    </body>
+    
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+</script>
+</head>
+<body>
+  <main>
+    <h1>Nintynine</h1>
+    <ul>
+      <a href="https://deyuman.github.io/website/">Main Website</a>
+      <a href="nintynine.html">nintynine</a>
+      <a href="index.html">home</a>
+      <a href="planet.html">planet</a>
+      <a href="buzzwords.html">buzzwords</a>
+      </ul>
+  </main>
+  <p>
+    Body {<br>&nbsp;&nbsp;	&nbsp;	&nbsp;	&nbsp;background-color: #008080;
+    <br>&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;color: #fffff; <br>}
+  </p>
+  <div class="questions">
+    <url id="ans1" ondrop="drop(event)" ondragover="allowDrop(event)"></url><div>A rule</div>
+    <url id="ans1" ondrop="drop(event)" ondragover="allowDrop(event)"></url><div>A value</div>
+    <url id="ans1" ondrop="drop(event)" ondragover="allowDrop(event)"></url><div>A property</div>
+    <url id="ans1" ondrop="drop(event)" ondragover="allowDrop(event)"></url><div>A declaration</div>
+  </div>
+  <img id="drag1" src="check.png" draggable="true" ondragstart="drag(event)" width="50" height="69">
+  <footer>
+    <a class="pie" id="vLink1"><strong> HTML </strong> Valid! </a> |
+    <a class="pie" id="vLink2"><strong> CSS </strong> Valid! </a>
+  </footer>
+</body>
 </html>
