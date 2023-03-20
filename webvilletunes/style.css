@@ -30,3 +30,7 @@ canvas{
     width: 60%;
     border:1px solid #ee0707;
 }
+/*codigo python*/
+.codigo{
+    background-color:rgb(255, 0, 0);
+}
