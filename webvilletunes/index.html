@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script defer src="https://pyscript.net/latest/pyscript.js"></script>
 <style>
 html {scroll-behavior: smooth;}
 </style>
@@ -18,59 +17,45 @@ html {scroll-behavior: smooth;}
     <a href="index.html">Home page</a>
   </ul>
 </main>
-
-<!--<canvas id="myCanvas">
-  Your browser does not support the HTML canvas tag.
-  <script>var c = document.getElementById("myCanvas");
-    var ctx = c.getContext("2d");
-    //lines
-    ctx.moveTo(2, 35);
-    ctx.lineTo(4, 40, );
-    ctx.moveTo(20, 20);
-    ctx.lineTo(4, 40, )
-    //lines
-    ctx.font = "10px Arial";
-    ctx.fillText("a. strokeText(text, x, y, maxWidth)", 10, 40);
-    ctx.fillText("b. paintText(text, x, y, maxWidth)", 10, 50);
-    ctx.fillText("c. fillText(text, x, y, maxWidth)", 10, 60);
-    ctx.fillText("d. drawText(text, x, y, maxWidth)", 10, 70);
-    ctx.fillText("47. Which mehtods are used to draw text on canvas?", 1, 10);
-    ctx.stroke();
-  </script>
-  </canvas>
-
-<canvas id="canvas2">
-  <script>
-
-  //alert("Good morning,"+prompt("What is your name?","")+"!");
-  var c = document.getElementById("canvas2");
-  var ctx = c.getContext("2d");
-  // Create gradient
-  var grd = ctx.createLinearGradient(0, 0, 200, 0);
-  grd.addColorStop(0, "red");
-  grd.addColorStop(1, "white");
-  // Fill with gradient
-  ctx.fillStyle = grd;
-  ctx.fillRect(10, 10, 150, 80);
-  </script>
-</canvas>-->
-
-<div class="codigo">
-  <script>
-    document.writeln("21.Which of the following JavaScript methods should you use if you want to <br>specify a message string to appear on your Webpage as it loads?")
-    document.writeln(Date())
-  </script>
-  <py-script style= "font-size: 50px;"> 
-    import datetime 
-    print(datetime.date.today())
-  </py-script>
+<p>20. Which type of CSS effect allows you to rotate an element clockwise to a new position
+  without animation?</p>
+<div id="imagen">
+  <img id="imagen-rotar"src="bandera.jpg" alt="Country flag" width="200">
+</div> 
+<div class="ans">
+  <button id="a">
+    a. User interface
+  </button>
+  <button onclick="transl()">
+    b. Scale
+  </button>
+    <button onclick="myFunction()">
+    c. 2D transformation
+   </button>
+  <button onclick="scaletransl()">
+    d. Transition
+  </button>
 </div>
-
+<script>
+function myFunction() {
+  var img = document.getElementById("imagen-rotar");
+  img.setAttribute("class", "rotated-image");
+}
+function transl(){
+  var img = document.getElementById("imagen-rotar");
+  img.setAttribute("class", "scale");
+}
+function scaletransl(){
+  var img = document.getElementById("imagen-rotar");
+  img.setAttribute("class", "scaleTran");
+}
+</script>
 
 <footer>
-<a id="vLink1"><strong> HTML </strong> Valid! </a> |
-<a id="vLink2"><strong> CSS </strong> Valid! </a>
+  <div class="bal">
+    <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+    <a id="vLink2"><strong> CSS </strong> Valid! </a>
+  </div>
 </footer>
-
 </body>
 </html>

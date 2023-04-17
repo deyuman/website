@@ -1,8 +1,10 @@
 body{
     margin: 0;
+    
 }
-main { 
-   
+main{
+    position: center;
+    text-align: center;
 }
 /*nav bar*/
 ul{
@@ -24,13 +26,49 @@ ul a:hover{
 
 }
 /*nav bar*/
-/*canvas*/
-canvas{
-    height: auto;
-    width: 60%;
-    border:1px solid #ee0707;
+footer{
+    margin-top: 70%;
+    display: flex; 
+    justify-content: center;
+    
 }
-/*codigo python*/
-.codigo{
-    background-color:rgb(255, 0, 0);
+p{
+    margin-top: 5%;
+    text-align: center;
 }
+.ans{
+    margin: 10%;
+}
+.ans div{
+    gap: 10px;
+    width: 200px;
+}
+.ans div:hover{
+    background-color: rgb(0, 98, 255);
+
+}
+#imagen{
+    display: flex;
+    
+}
+img{
+    margin-left:auto;
+    margin-right: auto;
+}
+.rotated-image {
+    transition-duration: 6s;
+    transform: rotate(360deg);
+  }
+.scale{
+  width: 300px;
+  height: 300px;
+  background: red;
+  
+}
+.scaleTran{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition:  5s;
+    
+  }
