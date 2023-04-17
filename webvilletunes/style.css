@@ -66,8 +66,7 @@ img{
   
 }
 .scaleTran{
-    width: 100px;
-    height: 100px;
+    width: 200px;
     background: red;
     transition:  5s;
     
